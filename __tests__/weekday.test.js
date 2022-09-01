@@ -11,7 +11,6 @@ describe ('calculateDay', () => {
 describe ('dateString', () => {
 
   test("return a string based on the day of the week", () => {
-    const date = "08/31/2022";
-    expect(calculateDay(date)).toEqual("This date lands on a Wednesday");
+    expect(dateString(calculateDay)).toEqual("This date lands on a Wednesday");
   });
 })
