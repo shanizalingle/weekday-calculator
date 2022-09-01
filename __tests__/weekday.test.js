@@ -1,4 +1,4 @@
-import { calculateDay } from '../src/js/weekday.js';
+import { calculateDay, dateString } from '../src/js/weekday.js';
 
 describe ('calculateDay', () => {
 
@@ -6,10 +6,12 @@ describe ('calculateDay', () => {
     const date = "08/31/2022";
     expect(calculateDay(date)).toEqual(3);
   });
+});
+
+describe ('dateString', () => {
 
   test("return a string based on the day of the week", () => {
     const date = "08/31/2022";
     expect(calculateDay(date)).toEqual("This date lands on a Wednesday");
   });
-});
-
+})
